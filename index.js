@@ -107,7 +107,10 @@ const renderDetails = (movie) => {
         </div>
     </div>
     <div class="columns">
-        <div class="column notification is-primary data" data-value="${boxOffice}"><h1 class="title">${movie.BoxOffice}</h1>
+        <div class="column notification is-primary data" data-value="${boxOffice}">
+            <h1 class="title">
+                ${movie.BoxOffice === undefined ? "N/A" : movie.BoxOffice}
+            </h1>
             <p class="subtitle">Box Office</p>
         </div>
     </div>
