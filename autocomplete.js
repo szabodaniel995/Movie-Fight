@@ -14,7 +14,6 @@ const createAutocomplete = (({ root, fetchData, renderOption, value, onOptionSel
     const dropContent = root.querySelector(".dropdown-content");
 
     const onInput = async() => {
-
         if (!input.value) {
             drop.classList.remove("is-active");
             return;
@@ -27,8 +26,7 @@ const createAutocomplete = (({ root, fetchData, renderOption, value, onOptionSel
         if (!results) {
             drop.classList.remove("is-active");
             console.log("No results found :(");
-        }
-        else {
+        } else {
             drop.classList.add("is-active");
             results.forEach((result) => {
                 const newItem = document.createElement("a");

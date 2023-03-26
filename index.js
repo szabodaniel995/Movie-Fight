@@ -132,7 +132,6 @@ const renderDetails = (movie) => {
     `
 };
 
-
 const compare = () => {
     const elements = document.querySelectorAll(".left-summary .data"); 
 
