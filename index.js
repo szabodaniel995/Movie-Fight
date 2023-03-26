@@ -69,7 +69,6 @@ const renderMovieParameters = (data, target, side) => {
     }
 };
 
-
 const fetchDetails = async(input) => {
     const config = {
         params: {
@@ -80,7 +79,6 @@ const fetchDetails = async(input) => {
     const response = await axios.get("http://www.omdbapi.com/", config);
     return response.data;
 };
-
 
 const renderDetails = (movie) => {
     const awards = wins(movie.Awards);
